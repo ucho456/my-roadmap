@@ -3,10 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3003",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "docker:start": "docker compose up -d",
+    "docker:stop": "docker compose down"
   },
   "dependencies": {
     "@types/node": "20.5.0",
